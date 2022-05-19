@@ -16,11 +16,12 @@
     <br/>
     <div class="container">
         <div class="left">
-            <form id="" action="">
+            <form id="form" action="">
                 <label for="">Write your post here</label>
                 <br><br>
                 <textarea name="" id="input" cols="30" rows="10"></textarea>
                 <br><br>
+                <div id="msg"></div>
                 <button type="submit">Post</button>
             </form>
         </div>
@@ -28,12 +29,19 @@
             <form id="">
                 <h3>Your post here</h3>
                 <br><br>
-                <div id="post">
+                <div id="posts">
                     <div>
                         <p>Post 1</p>
                             <span class="options">
-                                <i class="fa-solid fa-pen-to-square"></i>
-                                <i class="fa-solid fa-trash-can"></i>
+                                <i onClick="editPost(this)" class="fas fa-edit"></i>
+                                <i onClick="deletePost(this)" class="fas fa-trash-alt"></i>
+                            </span>                               
+                    </div>
+                    <div>
+                        <p>Post 2</p>
+                            <span class="options">
+                                <i onClick="editPost(this)" class="fas fa-edit"></i>
+                                <i onClick="deletePost(this)" class="fas fa-trash-alt"></i>
                             </span>                               
                     </div>
                 </div>
@@ -42,4 +50,5 @@
     </div>
 
 </body>
+<script src="main.js"></script>
 </html>
